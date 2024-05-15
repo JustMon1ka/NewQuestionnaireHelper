@@ -14,7 +14,7 @@ class Input(Question):
             "1": "使用GPT-3.5模型帮助回答",
         }
 
-        self.client = OpenAI()
+        self.client = OpenAI(api_key="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")
 
     def __str__(self):
         result = f"题目：{self.title}\n题型：{self.q_type}\n"
