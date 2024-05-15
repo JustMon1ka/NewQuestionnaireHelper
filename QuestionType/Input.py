@@ -13,8 +13,8 @@ class Input(Question):
             "0": "随机回答预设的选项",
             "1": "使用GPT-3.5模型帮助回答",
         }
-        api_key = ""
-        self.client = OpenAI(api_key=api_key)
+
+        self.client = OpenAI(api_key="")
 
     def __str__(self):
         result = f"题目：{self.title}\n题型：{self.q_type}\n"
